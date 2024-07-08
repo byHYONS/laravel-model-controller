@@ -14,11 +14,12 @@ class PageController extends Controller
 
         $movies = Movie::all();
 
-        $data = [
-            'movies' => $movies,
-        ];
+        // $data = [
+        //     'movies' => $movies,
+        // ];
 
-        return view('index', $data);
+
+        return view('index', compact('movies'));
     }
 
 

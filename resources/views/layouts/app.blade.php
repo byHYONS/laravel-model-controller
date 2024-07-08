@@ -12,7 +12,7 @@
     
     <h1>Hello World!</h1>
 
-    @yield('content')
+        @yield('content')
     
     {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
     

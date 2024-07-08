@@ -1,4 +1,4 @@
-@dd($data)
+@dd($movies)
 @extends( 'layouts.app' )
 
 @section( 'content' )
