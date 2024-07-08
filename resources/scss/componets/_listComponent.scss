@@ -24,74 +24,33 @@ main {
     }
     .col {@include col-x(4, 25px)}
 
-    .card-info{
-        position: fixed;
-        top: 52%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
-        border-radius: .9375rem;
-        background-color: $black;
-        width: 60%;
-        height: 600px;
-        overflow: scroll;
-        @extend %shadow;
-        z-index: 110;
-        .info {
-            padding: 1.875rem;
-            strong {
-                color: $red; 
-                margin-right: 10px ;
-            }
-            p {color: $text;}
-        }
-    }
 }
 
-// responsive:
-// desktop piccoli
+//? responsive:
+//* desktop piccoli
 @media screen and (max-width: 992px) {
     main {
         .col {
             @include col-x(3, 25px)           
         }
-        .card-info {
-                width: 70%;
-                height: 31.25rem;
-            }
+        
     }
 }
-// tablet
+//* tablet
 @media screen and (max-width: 768px) {
     main {
         .col {
             @include col-x(2, 25px)
         }
-        .card-info {
-                width: 80%;
-                height: 31.25rem;
-                .image{
-                    h3 {
-                        font-size: 1.75rem;
-                    }
-                }
-            }
+        
     }
 }
-// mobile
+//* mobile
 @media screen and (max-width: 576px) {
      main {
         .col {
             @include col-x(1, 25px);
         }
-        .card-info {
-                width: 90%;
-                height: 31.25rem;
-                .image{
-                    h3 {
-                        font-size: 1.5625rem;
-                    }
-                }
-            }
+        
     }
 }

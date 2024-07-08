@@ -3,13 +3,13 @@
     <div class="footer">
         <div class="logo">
 
-            <!-- logo brand -->
+            {{-- ? logo brand --}}
             <h4> Movies Laravel </h4>
 
         </div>
         <div class="credits">
 
-            <!-- cretits -->
+            {{-- ? credits --}}
             <h5> © byHYONS™ </h5>
 
         </div>

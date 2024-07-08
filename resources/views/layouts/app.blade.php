@@ -7,13 +7,16 @@
     <title>byHYONS</title>
     @vite('resources/js/app.js')
 </head>
-<body>
-    @include('shared.header')
+    <body>
 
-        @yield('listsMovie')
-    
-    {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
-    
-    @include('shared.footer')
-</body>
+        @include('shared.header')
+
+            {{-- ? creo segnaposto per listMovie --}}
+            @yield('listsMovie')
+        
+        {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
+        
+        @include('shared.footer')
+        
+    </body>
 </html>

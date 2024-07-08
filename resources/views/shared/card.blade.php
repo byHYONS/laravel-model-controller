@@ -2,24 +2,22 @@
 {{-- @dd($movie) --}}
 <div class="card">
 
-    <!-- info in hover -->
+    {{-- ? info card --}}
     <div class="hidden">
         <p> 
-            <strong>Titolo:</strong> {{ $movie->title }} 
+            <strong>Titolo: </strong> {{ $movie->title }} 
         </p>
 
         <p>
-             <strong>Titolo originale:</strong> {{ $movie->original_title }} 
+             <strong>Titolo originale: </strong> {{ $movie->original_title }} 
         </p>
 
-        <!-- voto: stars -->
         <p> 
-            <strong>Voto: {{$movie->vote}} </strong>
+            <strong>Voto: </strong> {{$movie->vote}}
         </p>
         
-        <!-- lingua: bandiera -->
         <p>
-            <strong>Nazionalità:</strong> {{$movie->nationality}}         
+            <strong>Nazionalità: </strong> {{$movie->nationality}}         
         </p>
 
     </div>
