@@ -1,0 +1,22 @@
+
+@import '../partials/variables';
+@import '../partials/extende';
+
+
+.card {
+    padding-top: 2rem;
+    border-radius: .625rem;
+    overflow: hidden;
+    background-color: $black;
+    color: $text;
+    @extend %shadow;    
+    .full-star {color: $stars}
+
+    .hidden {
+        height: 15rem;
+        overflow: auto;
+        padding: 1.5625rem;       
+        strong {color: $red;}
+        p, div {margin-bottom: .5rem;}
+    }
+}

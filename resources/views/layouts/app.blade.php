@@ -9,10 +9,8 @@
 </head>
 <body>
     @include('shared.header')
-    
-    <h1>Hello World!</h1>
 
-        @yield('content')
+        @yield('listsMovie')
     
     {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
     

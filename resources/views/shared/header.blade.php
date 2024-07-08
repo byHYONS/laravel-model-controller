@@ -1,3 +1,11 @@
 <header>
-    <h2>sono l'header</h2>
+
+    <div class="menu">
+
+        <!-- logo brand -->
+        <h1> Movie Laravel </h1>      
+
+    </div>
+
+
 </header>

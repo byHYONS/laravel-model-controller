@@ -1,6 +1,11 @@
-@dd($movies)
+{{-- @dd($movies) --}}
+{{-- ? estendo il layout all'index --}}
 @extends( 'layouts.app' )
 
-@section( 'content' )
-<h2>sono il content</h2>
+{{-- ? creo il componente per stampare i film --}}
+@section( 'listsMovie' )
+
+    {{-- ? includo listComponent --}}
+    @include('shared.listComponent')
+
 @endsection

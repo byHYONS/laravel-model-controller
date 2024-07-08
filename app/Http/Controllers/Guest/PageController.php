@@ -9,19 +9,13 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     
-
     public function index(){
 
+        //? leggo file dal DB:
         $movies = Movie::all();
-
-        // $data = [
-        //     'movies' => $movies,
-        // ];
-
 
         return view('index', compact('movies'));
     }
-
 
 
 }

@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+//? route di index:
 Route::get('/', [PageController::class, 'index']);
