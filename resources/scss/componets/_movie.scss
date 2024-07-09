@@ -1,0 +1,57 @@
+@import '../partials/variables';
+@import '../partials/extende';
+
+.container-80 {
+    position: relative;
+    min-height: calc(100vh - 11.25rem);
+    align-content: center;
+    .results {
+        margin: auto;
+        text-align: center;
+        @extend %shadow;
+        width: 80%;
+        background-color: $black;
+        border: .0938rem solid $ligthGray;
+        color: $text;
+        border-radius: .625rem;
+        padding: .75rem 1.25rem;
+        strong {
+            margin-left: .625rem
+        }
+        p.link {
+            display: inline-block;
+            text-align: center;
+            width: 50%;
+            margin-top: 3.25rem;
+            padding: .9375rem 1.25rem;
+            border-radius: .9375rem;
+            background-color: $red;
+            margin-bottom: 1.5625rem;
+            a {
+                color: $text;
+            }
+        }
+    }
+}
+
+
+.card {
+    padding-top: 2rem;
+    border-radius: .625rem;
+    overflow: hidden;
+    background-color: $black;
+    color: $text;
+    @extend %shadow;   
+
+    .hidden {
+        h2{
+            margin-bottom: 1.5625rem;
+            font-size: 2.1875rem;
+        }
+        height: 15rem;
+        overflow: auto;
+        padding: 1.5625rem;       
+        strong {color: $red;}
+        p, div {margin-bottom: .5rem;}
+    }
+}

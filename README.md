@@ -23,4 +23,3 @@ php artisan make:controller Guest/PageController
 
 #### BONUS:
 Stilare il layout nei dettagli con Sass.
-

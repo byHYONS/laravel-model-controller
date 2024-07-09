@@ -13,6 +13,9 @@
 
             {{-- ? creo segnaposto per listMovie --}}
             @yield('listsMovie')
+
+            {{-- ? creo segnaposto per dettaglio --}}
+            @yield('movie')
         
         {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
         

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 
+
 class PageController extends Controller
 {
     
@@ -15,6 +16,17 @@ class PageController extends Controller
         $movies = Movie::all();
 
         return view('index', compact('movies'));
+    }
+
+    public function show($id){
+
+        $movie = Movie::find($id);
+
+        if($movie === NULL) {
+            return redirect()->route('home');
+        }
+
+        return view('movie', compact('movie'));
     }
 
 

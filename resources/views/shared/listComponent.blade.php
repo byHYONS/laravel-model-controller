@@ -19,8 +19,13 @@
 
                 <div class="col">
 
-                    {{-- ? includo il componente card --}}
-                    @include('shared.card')
+                    {{-- ? creo anchor per dettaglio movie --}}
+                    <a href="{{route('movie', ['id' => $movie->id]) }}">
+                        
+                        {{-- ? includo il componente card --}}
+                        @include('shared.card')
+
+                    </a>
 
                 </div>
                 

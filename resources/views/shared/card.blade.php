@@ -19,6 +19,9 @@
         <p>
             <strong>Nazionalità: </strong> {{$movie->nationality}}         
         </p>
+        <p>
+            <strong>Data uscita: </strong> {{ \Carbon\Carbon::parse($movie['date'])->format('d/m/Y')}}         
+        </p>
 
     </div>
 
